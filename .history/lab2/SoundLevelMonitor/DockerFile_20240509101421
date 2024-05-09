@@ -1,0 +1,15 @@
+FROM elcipse-temurin
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN javac SoundLevelMonitor.java
+
+CMD [ "java", "SoundLevelMonitor" ]FROM eclipse-temurin
+
+WORKDIR /usr/src/app
+COPY . .
+
+RUN javac SoundLevelMonitor.java
+CMD ["java", "SoundLevelMonitor"]

@@ -1,0 +1,7 @@
+FROM elcipse-temurin
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN javac 

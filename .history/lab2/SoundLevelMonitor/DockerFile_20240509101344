@@ -1,0 +1,3 @@
+FROM elcipse-temurin
+
+WORKDIR /the/workdir/path

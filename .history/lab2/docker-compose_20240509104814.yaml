@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  SoundLevelSensor:
+    image: sound_level_monitor:latest
+    build: ./SoundLevelMonitor
