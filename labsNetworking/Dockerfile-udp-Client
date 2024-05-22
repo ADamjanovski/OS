@@ -1,0 +1,7 @@
+#FROM openjdk:11
+FROM eclipse-temurin
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp
+RUN mkdir data
+RUN javac -d . ./src/udp/*.java
+CMD ["java", "udp.Client"]
